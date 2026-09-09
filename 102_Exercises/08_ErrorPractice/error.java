@@ -1,7 +1,7 @@
 class error {
 	public static void main(String args[]) {
         
-		system.out.println"Happy vacation day back!";
+		system.out.println()"Happy vacation day back!";
         system.out.println"What'd you do this weekend?
                            I watched a movie!";
 

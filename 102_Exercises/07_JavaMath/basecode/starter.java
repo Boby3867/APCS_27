@@ -5,7 +5,7 @@
 
 class starter {
 	public static void main(String args[]) {
-        // ===================================================
+        // ==================== ===============================
         // SECTION 1: Declaring int and double variables
         // ===================================================
  
