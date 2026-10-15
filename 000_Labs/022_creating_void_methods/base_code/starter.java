@@ -6,12 +6,22 @@
 import java.util.Scanner;
 
 class starter {
+	public static void toString(String a){
+	System.out.println(a);
+	}
+	
+	public static void toStringCombined(String a, String b){
+	System.out.println(a + " " + b);
+	}
+	
 	public static void main(String args[]){
 	Scanner sc = new Scanner(System.in);
-	int a = toStringCombined(4,5);
-	System.out.print(a);
+	System.out.println("Write a sentence!");
+	String first = sc.nextLine();
+	System.out.println("Write a sentence!");
+	String second = sc.nextLine();
+	toString(first);
+	toStringCombined(first, second);
 	}
-	public static int toStringCombined(int a, int b){
-	return a + b;
-	}
+	
 }
