@@ -37,11 +37,11 @@ public class BankAccount {
 	}
 	// -------METHODS-------
 	public void employeeToString(){					// Prints all values of the Employee	
-		System.out.println("------------------------------");
-		System.out.println("Account Name " + Owner);
-		System.out.println("AccountNum " + AccountNum);
+		System.out.println("--- Account Info ---");
+		System.out.println("Owner: " + Owner);
+		System.out.println("Account Number: " + AccountNum);
 		System.out.println("Account Balabce $" + Balance);
-		System.out.println("Active " + isActive);
+		System.out.println("Status: " + isActive);
 		System.out.println("------------------------------");
 		System.out.println("");
 	}

@@ -12,13 +12,15 @@ public class PooleDwarf {
 	private String name;
 	private int age;
 
+
 	public PooleDwarf() {		// Default Constructor
 		name = new String("");
 		age = 0;
 	}
 
 	public PooleDwarf(String name, int age){
-		// Complete this constructor
+		this.name = new String(name);
+		this.age = age;
 	}
 
 	/*	Accessor Methods */
@@ -27,20 +29,25 @@ public class PooleDwarf {
 	}
 
 	public int getAge(){
-
+		return age;
 	}
 
 	/*	Mutator Methods	*/
 	public void setName(String nane){
-		// Fix this method
+		name = nane;
 	}
 	
 	public void setAge(String age){
-		// Fix this method
+		this.age = age;
 	}
 
 	public boolean isSameName(String name){
-		// Complete this method
+		if(this.name == name){
+			return true;
+		}
+		else{
+			return false;
+		}
 	}
 }
 
