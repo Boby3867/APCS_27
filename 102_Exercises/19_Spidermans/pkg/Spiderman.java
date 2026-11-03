@@ -77,4 +77,5 @@ public class Spiderman {
     System.out.println("         \\                ");   
     System.out.println("         /    			  "); 
 	}
+	
 }

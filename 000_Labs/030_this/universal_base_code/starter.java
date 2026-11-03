@@ -23,9 +23,23 @@ class starter {
 	}
 
 	public static void main(String args[]) {
-		// Your code goes below here
-		randName name = new randName();
-		PooleDwarf test = new PooleDwarf();
+		int age = (int) (Math.random()*16) + 14;
+		String nameA = randName();
+		String nameB = randName();
+		String nameC = randName();
+		String nameD = randName();
+		String nameE = randName();
+		String nameF = randName();
+		String nameG = randName();
+		PooleDwarf Dwarf = new PooleDwarf(nameA, age);
+		int duplicates = 0;
+		if(Dwarf.isSameName(nameB)) duplicates++;
+		if(Dwarf.isSameName(nameC)) duplicates++;
+		if(Dwarf.isSameName(nameD)) duplicates++;
+		if(Dwarf.isSameName(nameE)) duplicates++;
+		if(Dwarf.isSameName(nameF)) duplicates++;
+		if(Dwarf.isSameName(nameG)) duplicates++;
+		System.out.println(Dwarf.getName() + " was the name with " + duplicates + " matches!");
 		
 	}
 }

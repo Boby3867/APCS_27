@@ -11,6 +11,7 @@ import java.util.Random;
 public class PooleDwarf {
 	private String name;
 	private int age;
+	public int duplicates;
 
 
 	public PooleDwarf() {		// Default Constructor
@@ -37,12 +38,12 @@ public class PooleDwarf {
 		name = nane;
 	}
 	
-	public void setAge(String age){
+	public void setAge(int age){
 		this.age = age;
 	}
 
 	public boolean isSameName(String name){
-		if(this.name == name){
+		if(this.name.equals(name)){
 			return true;
 		}
 		else{
